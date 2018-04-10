@@ -91,8 +91,8 @@
     <Compile Include="ExternalServices\Santa\SantaAPI.cs" />
     <Compile Include="ExternalServices\Santa\SantaAutofacModule.cs" />
     <Compile Include="ExternalServices\Santa\Contracts\Wish.cs" />
+    <Compile Include="Infrastructure\Log\ConsoleLogger.cs" />
     <Compile Include="Infrastructure\Database\RavenDbStore.cs" />
-    <Compile Include="Infrastructure\Log\Log.cs" />
     <Compile Include="Infrastructure\MediatorBootstrapper.cs" />
     <Compile Include="Infrastructure\Pipeline\ICommand.cs" />
     <Compile Include="Infrastructure\Pipeline\Logging\ILogged.cs" />

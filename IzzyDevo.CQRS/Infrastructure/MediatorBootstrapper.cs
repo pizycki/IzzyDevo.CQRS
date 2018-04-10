@@ -94,5 +94,4 @@ namespace IzzyDevo.CQRS.Infrastructure
             });
         }
     }
-
 }
