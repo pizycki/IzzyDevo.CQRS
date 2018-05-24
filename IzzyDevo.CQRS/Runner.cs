@@ -13,8 +13,8 @@ namespace IzzyDevo.CQRS
         public static async Task Run(IMediator mediator)
         {
             // Point of life
-            var answer = await mediator.Send(new WhatIsTheMeaningOfLife());
-            Console.WriteLine($"The answer to the point of life is {answer}");
+            //var answer = await mediator.Send(new WhatIsTheMeaningOfLife());
+            //Console.WriteLine($"The answer to the point of life is {answer}");
 
             // Santa
             await mediator.Send(new SendSantaWishlist
@@ -24,15 +24,15 @@ namespace IzzyDevo.CQRS
                     "Car", "Doll", "Harry Potter book"
                 }
             });
-            Console.WriteLine("Your wishlist has been sent to santa!");
+            //Console.WriteLine("Your wishlist has been sent to santa!");
 
             // YouTube
-            await mediator.Send(new Subscribe
-            {
-                ChannelId = Guid.NewGuid().ToString(),
-                UserId = Guid.NewGuid().ToString()
-            });
-            Console.WriteLine("You've subscribed to YouTube channel!");
+            //await mediator.Send(new Subscribe
+            //{
+            //    ChannelId = Guid.NewGuid().ToString(),
+            //    UserId = Guid.NewGuid().ToString()
+            //});
+            //Console.WriteLine("You've subscribed to YouTube channel!");
 
         }
     }
